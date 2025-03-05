@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Score Prediction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/form-style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Credit Score Prediction</h1>
+    </header>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Enter Details</h2>
+            <form action="{{ url_for( 'user_data' )}}" method="post">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="g" required>
+                    <option value="">Select</option>
+                    <option value="0">Male</option>
+                    <option value="1">Female</option>
+                </select>
+
+                <label for="income">Income:</label>
+                <input type="number" id="income" name="i" placeholder="Enter your income" required>
+
+                <label for="rating">Rating:</label>
+                <input type="number" id="rating" name="r" placeholder="Enter your rating" required>
+
+                <label for="cards">Cards:</label>
+                <input type="number" id="cards" name="c" placeholder="Enter number of cards" required>
+
+                <label for="balance">Balance:</label>
+                <input type="number" id="balance" name="b" placeholder="Enter your balance" required>
+
+                <button type="submit">Predict Score</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Credit Score Predictor</p>
+    </footer>
+
+</body>
+</html>

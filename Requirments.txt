@@ -1,0 +1,38 @@
+#To load the dataset from csv file 
+pip install pandas (cmd)
+pip install numpy (cmd)
+
+import pandas as pd (python)
+import numpy as np (python)
+
+#To performe the EDA
+pip install matplotlib 
+pip install seaborn 
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+#to perform the Machine Learning Opreations 
+pip install scikit-learn
+
+from sklearn.prepocessing ordinalencoder
+
+#to dump and load the Model
+pip install joblib 
+
+
+#Deployment 
+pip install flask
+
+#mysql Work
+create database credit;
+create table prediction
+    -> (
+    -> id int auto_increment primary key,
+    -> g int not null,
+    -> i int not null,
+    -> r int not null,
+    -> c int not null,
+    -> b int not null,
+    -> p int not null
+    -> );    
